@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "phasmo_helper", "phasmo_helper.csproj", "{F10CAC07-860E-47BD-B304-04CA83563FDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F10CAC07-860E-47BD-B304-04CA83563FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10CAC07-860E-47BD-B304-04CA83563FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10CAC07-860E-47BD-B304-04CA83563FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10CAC07-860E-47BD-B304-04CA83563FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBF04A7B-2039-42EE-96ED-FF32DE311EE6}
+	EndGlobalSection
+EndGlobal
