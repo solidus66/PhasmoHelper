@@ -38,7 +38,14 @@
             panel1 = new Panel();
             textBox1 = new TextBox();
             clear_button = new Button();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            tabPage2 = new TabPage();
+            textBox2 = new TextBox();
             panel1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // emf5
@@ -120,7 +127,7 @@
             panel1.Controls.Add(spirit_box);
             panel1.Controls.Add(writing);
             panel1.Controls.Add(uv);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(0, 8);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 144);
             panel1.TabIndex = 7;
@@ -128,16 +135,17 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Window;
-            textBox1.Location = new Point(152, 160);
+            textBox1.Location = new Point(160, 192);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(496, 64);
             textBox1.TabIndex = 8;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // clear_button
             // 
-            clear_button.Location = new Point(328, 248);
+            clear_button.Location = new Point(336, 272);
             clear_button.Name = "clear_button";
             clear_button.Size = new Size(140, 48);
             clear_button.TabIndex = 9;
@@ -145,21 +153,66 @@
             clear_button.UseVisualStyleBackColor = true;
             clear_button.Click += clear_button_Click;
             // 
+            // tabControl1
+            // 
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Location = new Point(0, 0);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(800, 448);
+            tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            tabPage1.Controls.Add(panel1);
+            tabPage1.Controls.Add(clear_button);
+            tabPage1.Controls.Add(textBox1);
+            tabPage1.Location = new Point(4, 29);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Size = new Size(792, 415);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Улики";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            tabPage2.Controls.Add(textBox2);
+            tabPage2.Location = new Point(4, 29);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Size = new Size(792, 415);
+            tabPage2.TabIndex = 0;
+            tabPage2.Text = "Описания";
+            tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = SystemColors.Window;
+            textBox2.Location = new Point(0, 0);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
+            textBox2.ScrollBars = ScrollBars.Vertical;
+            textBox2.Size = new Size(792, 424);
+            textBox2.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(800, 450);
-            Controls.Add(clear_button);
-            Controls.Add(textBox1);
-            Controls.Add(panel1);
+            Controls.Add(tabControl1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             HelpButton = true;
             Name = "Form1";
             Text = "Phasmo Helper";
             panel1.ResumeLayout(false);
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -174,5 +227,9 @@
         private Panel panel1;
         private TextBox textBox1;
         private Button clear_button;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TextBox textBox2;
     }
 }
