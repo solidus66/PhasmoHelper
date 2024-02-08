@@ -52,7 +52,7 @@ namespace phasmo_helper
                 new Ghost(Resources.GhostResources.GhostName_Thaye, new List<string> { "Orb", "Ghost Writing", "DOTS" }),
             };
         }
-        private void InitializeGhostDescriptions() 
+        private void InitializeGhostDescriptions()
         {
             ghostDescriptions = new List<GhostDescription>
             {
@@ -215,6 +215,7 @@ namespace phasmo_helper
             this.Controls.Clear();
             this.clear_button_Click(sender, e);
             InitializeComponent();
+            InitializeGhostDescriptions();
             UpdateDescriptionTextBox();
         }
 
