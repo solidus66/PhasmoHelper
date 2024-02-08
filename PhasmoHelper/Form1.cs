@@ -207,14 +207,18 @@ namespace phasmo_helper
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("rus");
             this.Controls.Clear();
+            this.clear_button_Click(sender, e);
             InitializeComponent();
+            UpdateDescriptionTextBox();
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
             this.Controls.Clear();
+            this.clear_button_Click(sender, e);
             InitializeComponent();
+            UpdateDescriptionTextBox();
         }
     }
 
