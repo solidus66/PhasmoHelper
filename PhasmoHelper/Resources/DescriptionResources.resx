@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Description_Banshee" xml:space="preserve">
+    <value>В мультиплеере выбирает себе одну конкретную жертву. При атаке ориентируется только на рассудок выбранной жертвы, а не на общий. Постоянно ходит за жертвой. В одиночной игре или если цель вышла из дома, работает как обычный призрак. Через Направленный Микрофон можно услышать особый крик.</value>
+  </data>
+  <data name="Description_Demon" xml:space="preserve">
+    <value>Охотится чаще, чем другие призраки и может начать охоту независимо от уровня рассудка. Радиус работы распятия увеличен.</value>
+  </data>
+  <data name="Description_Deogen" xml:space="preserve">
+    <value>Может охотиться от 40% рассудка и ниже. От него невозможно спрятаться. Он очень быстр, когда не видит цель, но подходя ближе становится медленным настолько, что от него можно уйти пешком. Имеет особый звук ответа через радиоприёмник.</value>
+  </data>
+  <data name="Description_Goryo" xml:space="preserve">
+    <value>Очень редко меняет свою комнату (практически никогда). Его Лазерный Проектор видим только на камерах + он его не покажет, если с камерой находиться в его комнате.</value>
+  </data>
+  <data name="Description_Hantu" xml:space="preserve">
+    <value>На холоде ходит быстрее, в прогретых частях дома - медленнее. Также на холоде можно увидеть морозное дыхание у этого призрака (такое же как у игрока).</value>
+  </data>
+  <data name="Description_Jinn" xml:space="preserve">
+    <value>Когда генератор включен, он сильно повышает скорость, когда его цель далеко. На более близком расстоянии скорость уменьшается. Если генератор отключен - поведение стандартного призрака.</value>
+  </data>
+  <data name="Description_Mare" xml:space="preserve">
+    <value>Любит темноту. Атакует при 60% рассудка, когда свет в комнате выключен. При 40%, когда включен.</value>
+  </data>
+  <data name="Description_Moroi" xml:space="preserve">
+    <value>Много рассудка - медленный, мало рассудка - очень быстрый. Ускоряться начинает от 45% рассудка и ниже. При ответе через радиоприёмник или при разговоре через направленный миркрофон может наслать на игрока проклятие, что приведёт к стремительному снижению рассудка.</value>
+  </data>
+  <data name="Description_Myling" xml:space="preserve">
+    <value>Очень тихо ходит. Более часто издаёт паранормальные звуки в Направленном Микрофоне.</value>
+  </data>
+  <data name="Description_Obake" xml:space="preserve">
+    <value>Имеет шанс в 25% не оставить отпечатки. Также имеет особый шестипалый отпечаток руки.</value>
+  </data>
+  <data name="Description_Oni" xml:space="preserve">
+    <value>Очень активен. Во время охоты почти не исчезает. Не может сделать шаровой ивент.</value>
+  </data>
+  <data name="Description_Onryo" xml:space="preserve">
+    <value>Может начать охоту при рассудке 60% и ниже. Но также атакует при любом уровне рассудка, если задует 3 свечи.</value>
+  </data>
+  <data name="Description_Phantom" xml:space="preserve">
+    <value>Если на него смотреть, рассудок понжается быстрее. Он исчезает с фотографий, но делает это не прерывая звук ивента.</value>
+  </data>
+  <data name="Description_Poltergeist" xml:space="preserve">
+    <value>Он очень много взаимодействует. Кидает много предметов и порой на большие расстояния, часто дёргает двери. Бесполезен в пустых комнатах.</value>
+  </data>
+  <data name="Description_Raiju" xml:space="preserve">
+    <value>Может начать охоту от 65% рассудка, если рядом включена электроника (только оборудование игроков, свет в доме или находящаяся в нём электроника не считается). От этой электроники он питается и увеличивает скорость. Увеличен радиус чувствительности к электронике игрока.</value>
+  </data>
+  <data name="Description_Revenant" xml:space="preserve">
+    <value>Он очень медленный, когда не видит игрока. Когда видит - очень быстрый.</value>
+  </data>
+  <data name="Description_Shade" xml:space="preserve">
+    <value>Стесняшка. Может охотиться от 35% рассудка и ниже, но не начинает охоту, когда кто-то находится в его комнате.</value>
+  </data>
+  <data name="Description_Spirit" xml:space="preserve">
+    <value>Если его заблаговонять, то он не cможет охотиться 3 минуты.</value>
+  </data>
+  <data name="Description_Thaye" xml:space="preserve">
+    <value>Может начать озотиться от 75% рассудка, но в течение игры стареет. В конце концов может начать охоту только после достижения отметки ниже 15% рассудка.</value>
+  </data>
+  <data name="Description_TheMimic" xml:space="preserve">
+    <value>Полностью копирует поведение других призраков. Имеет Призрачный Огонёк, который считается у него не уликой, а абилкой.</value>
+  </data>
+  <data name="Description_TheTwins" xml:space="preserve">
+    <value>Их буквально двое. Один из них медленнее, чем другие призраки, другой - быстрее. Могут взаимодействовать с разными предметами (порой и в разных комнатах) одновременно.</value>
+  </data>
+  <data name="Description_Wraith" xml:space="preserve">
+    <value>Может телепортироваться к игрогу через весь дом, а затем вернуться к себе в комнату (не путать с телепортацией ивентом, неподалеку от своей комнаты). Он никогда не наступит в соль.</value>
+  </data>
+  <data name="Description_Yokai" xml:space="preserve">
+    <value>Может начать охоту от 80% рассудка, если болтать с ним рядом. Во время охоты глух, глуп и слеп - уменьшен радиус чувствивтельности к электронике/звукам игрока.</value>
+  </data>
+  <data name="Description_Yurei" xml:space="preserve">
+    <value>При ивентах он очень сильно сажает рассудок. Если заблаговонять, то временно перестанет слоняться по дому.</value>
+  </data>
+</root>
