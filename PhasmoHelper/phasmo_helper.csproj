@@ -13,4 +13,46 @@
     <Folder Include="Properties\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Resources\DescriptionResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DescriptionResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\GhostResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GhostResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\GhostResources.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GhostResources.en.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\PhrasesResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PhrasesResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\DescriptionResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DescriptionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\GhostResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GhostResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\GhostResources.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GhostResources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\PhrasesResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PhrasesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
