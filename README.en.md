@@ -1,6 +1,6 @@
 # Phasmo Helper
 
-* [Russian README](https://github.com/solidus66/PhasmoHelper/blob/main/README.md)
+* [Russian README](README.md)
 
 This is an improved "journal" for the game Phasmophobia. It was created for personal use to quickly select the "Ghost Orb" evidence without fear of forgetting it or missing The Mimic.
 
@@ -10,7 +10,9 @@ Phasmophobia version at the time of utility creation - v0.9.4.1
 
 #### Description of the Implemented Functionality:
 
-When launching the .exe file, the app starts in Russian. You can change it to English by navigating to Language -> English. The window opens on the "Evidence" tab with buttons corresponding to ghost evidence for the game Phasmophobia (v0.9.4.1).
+When launching the .exe file, the app starts in English. You can change it to Russian by navigating to Language -> Russian. The window opens on the "Evidence" tab with buttons corresponding to ghost evidence for the game Phasmophobia (v0.9.4.1).
+
+When selecting the Russian language in the application, a user.config file will be created at the following path: "C:\Users\Username\AppData\Local\phasmo_helper\phasmo_helper_Url_\2.0.0.0\user.config"
 
 ![image](https://github.com/solidus66/PhasmoHelper/assets/59517205/81acee7a-a834-47cc-bf8e-627e846f7606)
 
@@ -37,6 +39,6 @@ When selecting specific evidence on the "Evidence" tab, only the relevant ghosts
 * [X] ~~Add English language (optional selection)~~
   * [X] ~~Add an English UI~~
   * [X] ~~Provide a complete translation~~
-* [ ] Add the ability to save the selected language upon restarting
+* [X] ~~Add the ability to save the selected language upon restarting~~
 
 ---
