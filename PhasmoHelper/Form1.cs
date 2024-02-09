@@ -16,12 +16,23 @@ namespace phasmo_helper
 
         public Form1()
         {
+            LoadLanguageSetting();
             InitializeComponent();
             InitializeGhosts();
             InitializeGhostDescriptions();
             UpdateDescriptionTextBox();
         }
+        private void LoadLanguageSetting()
+        {
+            string selectedLanguage = Properties.Settings.Default.SelectedLanguage;
 
+            if (string.IsNullOrEmpty(selectedLanguage))
+            {
+                selectedLanguage = "en";
+            }
+
+            SetLanguage(selectedLanguage);
+        }
         private void InitializeGhosts()
         {
             ghosts = new List<Ghost>
@@ -127,7 +138,6 @@ namespace phasmo_helper
         private void UpdateDescriptionTextBox()
         {
             textBox2.Text = string.Join("\r\n\r\n", ghosts.Select(ghost => $"{GetGhostDescription(ghost.Name)}"));
-            // textBox2.Text = "Более подробная шпаргалка находится тут - bit.ly/phasmo_helper_ru \r\n\r\n" + string.Join("\r\n\r\n", ghosts.Select(ghost => $"{GetGhostDescription(ghost.Name)}"));
         }
         private string GetGhostDescription(string ghostName)
         {
@@ -142,7 +152,6 @@ namespace phasmo_helper
                 return Resources.PhrasesResource.No_Description + ghostName;
             }
         }
-
 
         private void emf5_Click(object sender, EventArgs e)
         {
@@ -209,9 +218,21 @@ namespace phasmo_helper
             UpdateDescriptionTextBox();
         }
 
+        private void SetLanguage(string languageCode)
+        {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(languageCode);
+        }
+
+        private void SaveLanguageSetting(string languageCode)
+        {
+            Properties.Settings.Default.SelectedLanguage = languageCode;
+            Properties.Settings.Default.Save();
+        }
+
         private void russianToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("rus");
+            SetLanguage("rus");
+            SaveLanguageSetting("rus");
             this.Controls.Clear();
             this.clear_button_Click(sender, e);
             InitializeComponent();
@@ -221,7 +242,8 @@ namespace phasmo_helper
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            SetLanguage("en");
+            SaveLanguageSetting("en");
             this.Controls.Clear();
             this.clear_button_Click(sender, e);
             InitializeComponent();
