@@ -1,6 +1,6 @@
 # Phasmo Helper
 
-* [English README]()
+* [English README](https://github.com/solidus66/PhasmoHelper/blob/main/README.en.md)
 
 Это улучшенный "журнал" для игры Phamophobia. Сделан для себя, чтобы можно было сразу выбрать улику "Призрачный огонёк", не боясь того, что можно либо забыть её, либо упустить Мимика.
 

@@ -1,6 +1,6 @@
 # Phasmo Helper
 
-* [Russian README]()
+* [Russian README](https://github.com/solidus66/PhasmoHelper/blob/main/README.md)
 
 This is an improved "journal" for the game Phasmophobia. It was created for personal use to quickly select the "Ghost Orb" clue without fear of forgetting it or missing the Mimic.
 
