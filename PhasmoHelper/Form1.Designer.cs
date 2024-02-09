@@ -105,7 +105,6 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(panel1, "panel1");
             panel1.Controls.Add(orbs);
             panel1.Controls.Add(dots);
             panel1.Controls.Add(emf5);
@@ -113,12 +112,13 @@
             panel1.Controls.Add(spirit_box);
             panel1.Controls.Add(writing);
             panel1.Controls.Add(uv);
+            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
             // 
             // textBox1
             // 
-            resources.ApplyResources(textBox1, "textBox1");
             textBox1.BackColor = SystemColors.Window;
+            resources.ApplyResources(textBox1, "textBox1");
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
             // 
@@ -131,68 +131,68 @@
             // 
             // tabControl1
             // 
-            resources.ApplyResources(tabControl1, "tabControl1");
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            resources.ApplyResources(tabControl1, "tabControl1");
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             // 
             // tabPage1
             // 
-            resources.ApplyResources(tabPage1, "tabPage1");
             tabPage1.Controls.Add(panel1);
             tabPage1.Controls.Add(clear_button);
             tabPage1.Controls.Add(textBox1);
+            resources.ApplyResources(tabPage1, "tabPage1");
             tabPage1.Name = "tabPage1";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            resources.ApplyResources(tabPage2, "tabPage2");
             tabPage2.Controls.Add(textBox2);
+            resources.ApplyResources(tabPage2, "tabPage2");
             tabPage2.Name = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
-            resources.ApplyResources(textBox2, "textBox2");
             textBox2.BackColor = SystemColors.Window;
+            resources.ApplyResources(textBox2, "textBox2");
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.BackColor = SystemColors.ControlLightLight;
             menuStrip1.GripStyle = ToolStripGripStyle.Visible;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { languageToolStripMenuItem });
+            resources.ApplyResources(menuStrip1, "menuStrip1");
             menuStrip1.Name = "menuStrip1";
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(languageToolStripMenuItem, "languageToolStripMenuItem");
             languageToolStripMenuItem.BackColor = SystemColors.ControlLight;
             languageToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { russianToolStripMenuItem, englishToolStripMenuItem });
             languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // russianToolStripMenuItem
             // 
-            resources.ApplyResources(russianToolStripMenuItem, "russianToolStripMenuItem");
             russianToolStripMenuItem.Name = "russianToolStripMenuItem";
+            resources.ApplyResources(russianToolStripMenuItem, "russianToolStripMenuItem");
             russianToolStripMenuItem.Click += russianToolStripMenuItem_Click;
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(englishToolStripMenuItem, "englishToolStripMenuItem");
             englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(englishToolStripMenuItem, "englishToolStripMenuItem");
             englishToolStripMenuItem.Click += englishToolStripMenuItem_Click;
             // 
             // Form1
             // 
-            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.None;
             BackColor = SystemColors.ControlLightLight;
+            resources.ApplyResources(this, "$this");
             Controls.Add(tabControl1);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
